@@ -1,0 +1,190 @@
+///////////////////////////////////////////////////
+// Variables, Operators, Comments 
+
+ineteger        Floating Point 
+4               6.1
+57              1.99999
+-10             0.0
+
+
+
+#1 Numbers and Math 
+
+Symbol      Name
+ +          Additon 
+ -          Subtraction
+ *          Multiplication
+ /          Division
+ **         Exponentiation 
+ %          Modulo
+ //         Integer Division
+
+
+
+
+
+
+
+
+#2 Variables Assignment 
+
+ - A variable in Python is like a variable in maths: it is named Symbol that holds a value.
+ - Variables are alawys assigned with the variable name on the left and the value on the right of the equeals sighn (=)
+
+    
+    x = 100 
+    khaleesi_mother_of_dragons = 1
+    print(khaleesi_mother_of_dragons + x)
+    >>> 101
+
+
+- Variables can be 
+   assigned to other variables 
+   reassigned at any time 
+   assigned at the time as other Variables
+
+
+pyhthon_is_awesome =  100
+just_another_var = pyhthon_is_awesome
+print(just_another_var)
+>>> 100
+
+
+
+#3 Naming Restrictions
+
+- In Python, you can name your variables whatever you want, with some Restrictions
+
+1. Variables must start with a letter or underscore 
+
+Right - _cats
+Wrong - 2cats 
+
+2.The rest of the name must consist of letters , numbers, or underscores
+
+Right - cats2 
+Wrong - 2cats 
+
+3. Names are case-sensitive 
+CATS != Cats     Cats !=cats 
+
+
+
+#4  Naming Conventions
+
+Most Python programmers prefer to use standard style conventions when naming things:
+
+Most variables should be snake_case (underscores between words)
+
+
+
+
+#5 DATA TYPES
+
+In any assignment, the assigned value must always be a valid data type.
+
+Python data types include:
+
+         Data typedescription
+
+bool	          True or False values
+int	an integer    (1, 2, 3)
+str	(string)      a sequence of Unicode characters, e.g. "Doniyor" or "程序设计"
+list	          an ordered sequence of values of other data types, e.g. [1, 2, 3] or ["a", "b", "c"]
+dict	          a collection of key: values, e.g. { "first_name": "Doniyor", "last_name": "Aloxanov" }
+
+
+
+
+#6 Dynamic Typing
+
+Python is highly flexible about reassigning variables to different types:
+
+awesomeness = True
+print(awesomeness) # True
+
+awesomeness = "a dog"
+print(awesomeness) # a dog
+
+awesomeness = None
+print(awesomeness) # None
+
+awesomeness = 22 / 7
+print(awesomeness) # 3.142857142857143
+
+
+We call this dynamic typing, since variables can change types readily.
+
+
+
+
+#7 Declaring Strings
+
+String literals in Python can be declared with either single or double quotes.
+
+my_other_str = 'a hat'
+my_str = "a cat"
+
+
+Either one is perfectly fine; but make sure you stick to the same convention throughout the same file.
+
+
+
+#8 String Escape Characters
+
+In Python there are also "escape characters", which are "metacharacters" - they get interpreted by Python to do something special:
+
+new_line = "hello \n world"
+
+print(new_line)
+# hello
+# world
+
+All escape characters start with a backslash "\". 
+
+In Python there are also "escape characters", which are "metacharacters" - they get interpreted by Python to do something special:
+
+
+
+
+#9 String Concatenation
+
+Concatenation is combining multiple strings together. In Python you can do this simply with the "+" operator.
+
+str_one = "your"
+str_two = "face"
+str_three = str_one + " " + str_two  
+>>> your face 
+
+
+You can also use the "+=" operator!
+str_one = "ice"
+str_one += " cream"
+str_one  >>> ice cream  
+
+
+#10 Formatting Strings
+
+The new way (new in Python 3.6+) => F-Strings
+
+x = 10
+formatted = f"I've told you {x} times already dude!"
+>>> I've told you 10 times already dude!
+
+
+
+#11 Converting Data Types
+
+You can also explicitly convert variables by using the name of the builtin type as a function (more on functions later):
+
+decimal = 12.56345634534
+integer = int(decimal)  
+>>> 12
+
+my_list = [1, 2, 3]
+my_list_as_a_string = str(my_list)  
+>>> "[1, 2, 3]"
+
+
+
+
